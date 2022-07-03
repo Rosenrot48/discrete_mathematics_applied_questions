@@ -13,4 +13,4 @@ def change_element(input_string):
         print('Поддерживается ввод только 2 слов')
 
 
-change_element('Hello World')
+# change_element('Hello World')

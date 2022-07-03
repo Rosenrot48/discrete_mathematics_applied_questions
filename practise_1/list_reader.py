@@ -4,6 +4,7 @@ def reader(array, break_number):
     # которая выводит чётные числа из заданного списка и останавливается, если
     # встречает число 237
     # --------------------
+    output = []
     for number in array:
         if number == break_number:
             print('Встретилось блокирующее число: ', break_number)
@@ -11,6 +12,8 @@ def reader(array, break_number):
         else:
             if number % 2 == 0:
                 print(number)
+                output.append(number)
+    return output
 
 
-reader([2, 1, 3, 4, 5, 2, 1, 312, 321, 237, 123, 4321, 566, 322, 211], 237)
+# reader([2, 1, 3, 4, 5, 2, 1, 312, 321, 237, 123, 4321, 566, 322, 211], 237)
